@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Square from "./Square";
+import './Board.css';
 
 const Board = () => {
   const [state, setState] = useState(Array(9).fill(null));
@@ -48,7 +49,7 @@ const Board = () => {
         <>{isWinner} won the game...! Hurray <strong>Congratulations</strong>  <button onClick={handleReset}>Play Again</button></>
       ) : (
         <>
-          <h4>Player {isXTurn ? 'X' : 'O'} please move, it's your <strong>turn</strong></h4>
+          <h2>Player {isXTurn ? 'X' : 'O'} please move, it's your <strong>turn</strong></h2>
           <div className="board-row">
             <Square onClick={() => handleClick(0)} value={state[0]} />
             <Square onClick={() => handleClick(1)} value={state[1]} />

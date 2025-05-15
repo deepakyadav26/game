@@ -5,7 +5,7 @@ const Square = (props) => {
     <div
       onClick={props.onClick}
       style={{
-        border: "1px solid",
+        border: "3px solid red",
         height: "100px",
         width: "100%",
         display: "flex",

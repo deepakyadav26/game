@@ -8,4 +8,5 @@
 
 .board-container{
   margin: 20px;
+  border: 2px solid rgb(7, 7, 216);
 }
